@@ -21,7 +21,7 @@ This repository is the official implementation of **DSPL**.
 ## ⚙️ Set Dataset Path
       Before training, please setup dataset directories in `config.py` :
       ```
-      cifar_10_root = '../data'                                   # path for cifar10
+      cifar_10_root = '../data'                                 # path for cifar10
       tin_train_root_dir = '../data/tiny-imagenet-200/train'    # path for tinyimagenet train
       tin_val_root_dir = '../data/tiny-imagenet-200/val1'       # path for ood datasets val
       ```
