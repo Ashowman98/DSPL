@@ -160,11 +160,8 @@ elif args.dataset == 'imagenet_1k':
     args.train_classes = [i for i in range(100)]
     target_classes = np.array(datasets['train'].classes)[args.train_classes].tolist()
 
-
-    # 定义文件路径
     synset_path = '../data/ILSVRC2012/synset_words.txt'
 
-    # 读取synset映射为字典
     id_to_classname = {}
     with open(synset_path, 'r') as f:
         for line in f:
@@ -173,7 +170,6 @@ elif args.dataset == 'imagenet_1k':
                 synset_id, class_name = parts
                 id_to_classname[synset_id] = class_name
 
-    # 转换为真实类名
     real_classnames = [id_to_classname.get(cls_id, f'Unknown: {cls_id}') for cls_id in target_classes]
     target_classes = real_classnames
 
