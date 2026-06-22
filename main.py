@@ -162,7 +162,7 @@ elif args.dataset == 'imagenet_1k':
 
 
     # 定义文件路径
-    synset_path = '/home/wsco/wrokspace/lhy/ILSVRC2012/synset_words.txt'
+    synset_path = '../data/ILSVRC2012/synset_words.txt'
 
     # 读取synset映射为字典
     id_to_classname = {}
